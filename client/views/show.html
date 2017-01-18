@@ -1,0 +1,23 @@
+<div class="container">
+	<map zoom="10" center="[{{show.items[0].latitude}}, {{show.items[0].longitude}}]" style="height:75%">
+  		<marker position="[{{stop.latitude}}, {{stop.longitude}}]" title="{{stop.display_name}}" ng-repeat="stop in show.items" />
+  		<marker position="current-location" icon="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" title="Current Location"/>
+  		<control name="overviewMap" opened="true" />
+	</map>
+</div>
+<br />
+<div class="jumbotron text-left">
+		<form ng-submit="sendemail()">
+			<label>Enter the email id to send the bus stops info to email:</label>
+			<input type="text" ng-model="emailid" placeholder="Email id" />
+			<input type="submit" class="btn btn-primary" value="Send Email"/> {{emailstatus}}
+		</form>
+		
+		<div ng-repeat="stop in show.items">
+			<div class="row">
+				<div class="col-md-4">
+					{{stop.display_name}}
+				</div>
+			</div>
+		</div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "name": "hapifinal",
+  "version": "1.0.0",
+  "description": "hapi-demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "basic": "0.0.3",
+    "bcryptjs": "^2.3.0",
+    "directory": "^0.1.0",
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
+    "handlebars": "^4.0.5",
+    "hapi": "^11.1.2",
+    "hapi-auth-basic": "^4.1.0",
+    "hapi-mailer": "^4.0.0",
+    "hoek": "^3.0.4",
+    "inert": "^3.2.0",
+    "md5": "^2.0.0",
+    "mimos": "^3.0.0",
+    "superagent": "^1.4.0",
+    "vision": "^4.0.1"
+  }
+}

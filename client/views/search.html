@@ -1,0 +1,34 @@
+
+	<h2>Search Bus</h2>
+	
+	<form ng-submit="search()">
+		<div class="col-lg-6" style="padding-left:0;">
+			<div class="input-group">
+				<input name="queue" id="queue" type="text" placeholder="Enter the Bus Number" ng-model="searchText" class="form-control">
+ 
+				<span class="input-group-btn">
+
+					<input type="submit" class="btn btn-primary" value="Search"/>
+				</span>
+			</div>
+		</div>
+	</form>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<div ng-if="shows">
+		<div class="container well">
+			{{shows.display_name}}
+			<p align="right"><a href="/show/{{shows.id}}" class="btn btn-warning">Bus Route Details</a></p>
+		</div>
+	</div>
+
+
+	<div ng-if="shows.length == 0">
+		<div class="container well">
+			Invalid bus number
+		</div>
+	</div>
+	
